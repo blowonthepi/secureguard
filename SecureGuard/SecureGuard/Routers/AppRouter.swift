@@ -19,7 +19,7 @@ class AppRouter : ObservableObject {
     
     init() {
         switch LAContext().biometricType {
-        case .none:
+        case .none, .off:
             screen = .incompatible
             break
         default:
@@ -55,6 +55,8 @@ struct AppRouterView: View {
     @StateObject var router = AppRouter()
     
     var body: some View {
-        router.rootView()
+        NavigationStack {
+            router.rootView()
+        }
     }
 }

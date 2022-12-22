@@ -8,9 +8,17 @@
 import Foundation
 import LocalAuthentication
 
+func createBiometricAccessControl() -> SecAccessControl? {
+    return SecAccessControlCreateWithFlags(nil, // Use the default allocator.
+                                           kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly,
+                                           .biometryAny,
+                                           nil) // Ignore any error.
+}
+
 extension LAContext {
     enum BiometricType: String {
         case none
+        case off
         case touchID
         case faceID
     }
@@ -35,7 +43,7 @@ extension LAContext {
                 return .none
             }
         } else {
-            return self.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) ? .touchID : .none
+            return self.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) ? .touchID : .off
         }
     }
 }

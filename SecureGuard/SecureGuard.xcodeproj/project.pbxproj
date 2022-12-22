@@ -18,11 +18,13 @@
 		0C0B87212954DF2100131C97 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B87112954DF2000131C97 /* LoginScreen.swift */; };
 		0C0B87222954DF2100131C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0B87132954DF2000131C97 /* Assets.xcassets */; };
 		0C0B87232954DF2100131C97 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C0B87142954DF2000131C97 /* Localizable.strings */; };
-		0C0B87242954DF2100131C97 /* LocalAuthentication+BiometricEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B87162954DF2000131C97 /* LocalAuthentication+BiometricEnum.swift */; };
+		0C0B87242954DF2100131C97 /* Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B87162954DF2000131C97 /* Biometrics.swift */; };
 		0C0B87252954DF2100131C97 /* Strings+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B87172954DF2000131C97 /* Strings+Localized.swift */; };
 		0C0B87262954DF2100131C97 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B87192954DF2100131C97 /* AppRouter.swift */; };
 		0C0B87272954DF2100131C97 /* SecureGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B871A2954DF2100131C97 /* SecureGuardApp.swift */; };
 		0C0B87282954DF2100131C97 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B871C2954DF2100131C97 /* ButtonStyles.swift */; };
+		0C6C8DD32954EC9C00B0583B /* BiometricManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6C8DD22954EC9C00B0583B /* BiometricManager.swift */; };
+		0C6C8DD5295505D600B0583B /* MatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6C8DD4295505D600B0583B /* MatrixView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +59,13 @@
 		0C0B87112954DF2000131C97 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		0C0B87132954DF2000131C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C0B87142954DF2000131C97 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		0C0B87162954DF2000131C97 /* LocalAuthentication+BiometricEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalAuthentication+BiometricEnum.swift"; sourceTree = "<group>"; };
+		0C0B87162954DF2000131C97 /* Biometrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biometrics.swift; sourceTree = "<group>"; };
 		0C0B87172954DF2000131C97 /* Strings+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Localized.swift"; sourceTree = "<group>"; };
 		0C0B87192954DF2100131C97 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		0C0B871A2954DF2100131C97 /* SecureGuardApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureGuardApp.swift; sourceTree = "<group>"; };
 		0C0B871C2954DF2100131C97 /* ButtonStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		0C6C8DD22954EC9C00B0583B /* BiometricManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricManager.swift; sourceTree = "<group>"; };
+		0C6C8DD4295505D600B0583B /* MatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 		0C0B86DE2954DEF200131C97 /* SecureGuard */ = {
 			isa = PBXGroup;
 			children = (
+				0C6C8DD12954EC9000B0583B /* Dependencies */,
 				0C0B87182954DF2100131C97 /* Routers */,
 				0C0B87092954DF2000131C97 /* Screens */,
 				0C0B871B2954DF2100131C97 /* UI */,
@@ -196,7 +201,7 @@
 		0C0B87152954DF2000131C97 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				0C0B87162954DF2000131C97 /* LocalAuthentication+BiometricEnum.swift */,
+				0C0B87162954DF2000131C97 /* Biometrics.swift */,
 				0C0B87172954DF2000131C97 /* Strings+Localized.swift */,
 			);
 			path = Tools;
@@ -214,8 +219,17 @@
 			isa = PBXGroup;
 			children = (
 				0C0B871C2954DF2100131C97 /* ButtonStyles.swift */,
+				0C6C8DD4295505D600B0583B /* MatrixView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		0C6C8DD12954EC9000B0583B /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				0C6C8DD22954EC9C00B0583B /* BiometricManager.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +366,8 @@
 			files = (
 				0C0B87252954DF2100131C97 /* Strings+Localized.swift in Sources */,
 				0C0B87202954DF2100131C97 /* LoginViewModel.swift in Sources */,
-				0C0B87242954DF2100131C97 /* LocalAuthentication+BiometricEnum.swift in Sources */,
+				0C0B87242954DF2100131C97 /* Biometrics.swift in Sources */,
+				0C6C8DD32954EC9C00B0583B /* BiometricManager.swift in Sources */,
 				0C0B87282954DF2100131C97 /* ButtonStyles.swift in Sources */,
 				0C0B87272954DF2100131C97 /* SecureGuardApp.swift in Sources */,
 				0C0B871D2954DF2100131C97 /* IncompatibleScreen.swift in Sources */,
@@ -360,6 +375,7 @@
 				0C0B871E2954DF2100131C97 /* MatrixViewModel.swift in Sources */,
 				0C0B871F2954DF2100131C97 /* MatrixScreen.swift in Sources */,
 				0C0B87212954DF2100131C97 /* LoginScreen.swift in Sources */,
+				0C6C8DD5295505D600B0583B /* MatrixView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,17 +538,19 @@
 				DEVELOPMENT_TEAM = 6PRU5VR942;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We use Biometrics to secure your NetGuard card matrix";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.blowonthepi.SecureGuard;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.blowonthepi.bnz.SecureGuard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -553,17 +571,19 @@
 				DEVELOPMENT_TEAM = 6PRU5VR942;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We use Biometrics to secure your NetGuard card matrix";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.blowonthepi.SecureGuard;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.blowonthepi.bnz.SecureGuard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

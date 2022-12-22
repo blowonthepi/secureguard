@@ -12,24 +12,41 @@ protocol MatrixScreenDelegate {
 }
 
 struct MatrixScreen: View {
+    @StateObject var viewModel = MatrixViewModel()
     var delegate: MatrixScreenDelegate?
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                
-            }
-            .navigationTitle("appName")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        delegate?.doLogout()
-                    } label: {
-                        Text("lockButton")
-                    }
+        VStack {
+            MatrixView(matrix: viewModel.getMatrix())
+        }
+        .navigationTitle("appName")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    delegate?.doLogout()
+                } label: {
+                    Text("lockButton")
                 }
             }
         }
+        .sheet(isPresented: $viewModel.isSheetPresented) {
+            updateSheet()
+        }
+    }
+    
+    @ViewBuilder func updateSheet() -> some View {
+        VStack(alignment: .center) {
+            Text("screen.matrix.updateTitle")
+                .font(.largeTitle.bold())
+                .multilineTextAlignment(.center)
+            
+            Spacer()
+            
+            MatrixView(matrix: [[String]]())
+            
+            Spacer()
+        }
+        .padding()
     }
 }
 

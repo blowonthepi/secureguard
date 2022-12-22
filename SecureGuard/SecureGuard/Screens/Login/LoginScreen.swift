@@ -31,7 +31,12 @@ struct LoginScreen: View {
     
     @ViewBuilder func useFaceIDButton() -> some View {
         Button {
-            delegate?.doLogin()
+            viewModel.requestBiometricVerification {
+                delegate?.doLogin()
+            } failAction: {
+                // handle fail
+            }
+
         } label: {
             VStack {
                 Image(systemName: "faceid")

@@ -14,8 +14,10 @@
 
 // MARK: Login Screen
 "screen.login.welcomeMessage" = "Kia ora, welcome to\nSecureGuard";
+"screen.login.biometricReason" = "Access your NetGuard matrix";
 "screen.login.useFaceID" = "Use FaceID";
 "screen.login.useTouchID" = "Use TouchID";
 "screen.login.incompatible" = "SecureGuard requires iPhone Biometrics unavailable on your device";
 
 // MARK: Matrix Screen
+"screen.matrix.updateTitle" = "Update your SecureGuard matrix";
