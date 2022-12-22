@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0B86E72954DEF300131C97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0B86E62954DEF300131C97 /* Preview Assets.xcassets */; };
+		0C0B86F12954DEF300131C97 /* SecureGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B86F02954DEF300131C97 /* SecureGuardTests.swift */; };
+		0C0B86FB2954DEF300131C97 /* SecureGuardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B86FA2954DEF300131C97 /* SecureGuardUITests.swift */; };
+		0C0B86FD2954DEF300131C97 /* SecureGuardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B86FC2954DEF300131C97 /* SecureGuardUITestsLaunchTests.swift */; };
+		0C0B871D2954DF2100131C97 /* IncompatibleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B870B2954DF2000131C97 /* IncompatibleScreen.swift */; };
+		0C0B871E2954DF2100131C97 /* MatrixViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B870D2954DF2000131C97 /* MatrixViewModel.swift */; };
+		0C0B871F2954DF2100131C97 /* MatrixScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B870E2954DF2000131C97 /* MatrixScreen.swift */; };
+		0C0B87202954DF2100131C97 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B87102954DF2000131C97 /* LoginViewModel.swift */; };
+		0C0B87212954DF2100131C97 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B87112954DF2000131C97 /* LoginScreen.swift */; };
+		0C0B87222954DF2100131C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0B87132954DF2000131C97 /* Assets.xcassets */; };
+		0C0B87232954DF2100131C97 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C0B87142954DF2000131C97 /* Localizable.strings */; };
+		0C0B87242954DF2100131C97 /* LocalAuthentication+BiometricEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B87162954DF2000131C97 /* LocalAuthentication+BiometricEnum.swift */; };
+		0C0B87252954DF2100131C97 /* Strings+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B87172954DF2000131C97 /* Strings+Localized.swift */; };
+		0C0B87262954DF2100131C97 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B87192954DF2100131C97 /* AppRouter.swift */; };
+		0C0B87272954DF2100131C97 /* SecureGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B871A2954DF2100131C97 /* SecureGuardApp.swift */; };
+		0C0B87282954DF2100131C97 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B871C2954DF2100131C97 /* ButtonStyles.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C0B86ED2954DEF300131C97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C0B86D42954DEF200131C97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C0B86DB2954DEF200131C97;
+			remoteInfo = SecureGuard;
+		};
+		0C0B86F72954DEF300131C97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C0B86D42954DEF200131C97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C0B86DB2954DEF200131C97;
+			remoteInfo = SecureGuard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C0B86DC2954DEF200131C97 /* SecureGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0B86E62954DEF300131C97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0C0B86EC2954DEF300131C97 /* SecureGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0B86F02954DEF300131C97 /* SecureGuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureGuardTests.swift; sourceTree = "<group>"; };
+		0C0B86F62954DEF300131C97 /* SecureGuardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureGuardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0B86FA2954DEF300131C97 /* SecureGuardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureGuardUITests.swift; sourceTree = "<group>"; };
+		0C0B86FC2954DEF300131C97 /* SecureGuardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureGuardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0C0B870B2954DF2000131C97 /* IncompatibleScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncompatibleScreen.swift; sourceTree = "<group>"; };
+		0C0B870D2954DF2000131C97 /* MatrixViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixViewModel.swift; sourceTree = "<group>"; };
+		0C0B870E2954DF2000131C97 /* MatrixScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixScreen.swift; sourceTree = "<group>"; };
+		0C0B87102954DF2000131C97 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0C0B87112954DF2000131C97 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		0C0B87132954DF2000131C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C0B87142954DF2000131C97 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0C0B87162954DF2000131C97 /* LocalAuthentication+BiometricEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalAuthentication+BiometricEnum.swift"; sourceTree = "<group>"; };
+		0C0B87172954DF2000131C97 /* Strings+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Localized.swift"; sourceTree = "<group>"; };
+		0C0B87192954DF2100131C97 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		0C0B871A2954DF2100131C97 /* SecureGuardApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureGuardApp.swift; sourceTree = "<group>"; };
+		0C0B871C2954DF2100131C97 /* ButtonStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C0B86D92954DEF200131C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0B86E92954DEF300131C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0B86F32954DEF300131C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C0B86D32954DEF200131C97 = {
+			isa = PBXGroup;
+			children = (
+				0C0B86DE2954DEF200131C97 /* SecureGuard */,
+				0C0B871A2954DF2100131C97 /* SecureGuardApp.swift */,
+				0C0B86EF2954DEF300131C97 /* SecureGuardTests */,
+				0C0B86F92954DEF300131C97 /* SecureGuardUITests */,
+				0C0B86DD2954DEF200131C97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C0B86DD2954DEF200131C97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B86DC2954DEF200131C97 /* SecureGuard.app */,
+				0C0B86EC2954DEF300131C97 /* SecureGuardTests.xctest */,
+				0C0B86F62954DEF300131C97 /* SecureGuardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C0B86DE2954DEF200131C97 /* SecureGuard */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B87182954DF2100131C97 /* Routers */,
+				0C0B87092954DF2000131C97 /* Screens */,
+				0C0B871B2954DF2100131C97 /* UI */,
+				0C0B87152954DF2000131C97 /* Tools */,
+				0C0B87122954DF2000131C97 /* Resources */,
+				0C0B86E52954DEF300131C97 /* Preview Content */,
+			);
+			path = SecureGuard;
+			sourceTree = "<group>";
+		};
+		0C0B86E52954DEF300131C97 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B86E62954DEF300131C97 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C0B86EF2954DEF300131C97 /* SecureGuardTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B86F02954DEF300131C97 /* SecureGuardTests.swift */,
+			);
+			path = SecureGuardTests;
+			sourceTree = "<group>";
+		};
+		0C0B86F92954DEF300131C97 /* SecureGuardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B86FA2954DEF300131C97 /* SecureGuardUITests.swift */,
+				0C0B86FC2954DEF300131C97 /* SecureGuardUITestsLaunchTests.swift */,
+			);
+			path = SecureGuardUITests;
+			sourceTree = "<group>";
+		};
+		0C0B87092954DF2000131C97 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B870A2954DF2000131C97 /* Incompatible */,
+				0C0B870C2954DF2000131C97 /* Matrix */,
+				0C0B870F2954DF2000131C97 /* Login */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0C0B870A2954DF2000131C97 /* Incompatible */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B870B2954DF2000131C97 /* IncompatibleScreen.swift */,
+			);
+			path = Incompatible;
+			sourceTree = "<group>";
+		};
+		0C0B870C2954DF2000131C97 /* Matrix */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B870D2954DF2000131C97 /* MatrixViewModel.swift */,
+				0C0B870E2954DF2000131C97 /* MatrixScreen.swift */,
+			);
+			path = Matrix;
+			sourceTree = "<group>";
+		};
+		0C0B870F2954DF2000131C97 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B87102954DF2000131C97 /* LoginViewModel.swift */,
+				0C0B87112954DF2000131C97 /* LoginScreen.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0C0B87122954DF2000131C97 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B87132954DF2000131C97 /* Assets.xcassets */,
+				0C0B87142954DF2000131C97 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0C0B87152954DF2000131C97 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B87162954DF2000131C97 /* LocalAuthentication+BiometricEnum.swift */,
+				0C0B87172954DF2000131C97 /* Strings+Localized.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0C0B87182954DF2100131C97 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B87192954DF2100131C97 /* AppRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		0C0B871B2954DF2100131C97 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0C0B871C2954DF2100131C97 /* ButtonStyles.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C0B86DB2954DEF200131C97 /* SecureGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0B87002954DEF300131C97 /* Build configuration list for PBXNativeTarget "SecureGuard" */;
+			buildPhases = (
+				0C0B86D82954DEF200131C97 /* Sources */,
+				0C0B86D92954DEF200131C97 /* Frameworks */,
+				0C0B86DA2954DEF200131C97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecureGuard;
+			productName = SecureGuard;
+			productReference = 0C0B86DC2954DEF200131C97 /* SecureGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C0B86EB2954DEF300131C97 /* SecureGuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0B87032954DEF300131C97 /* Build configuration list for PBXNativeTarget "SecureGuardTests" */;
+			buildPhases = (
+				0C0B86E82954DEF300131C97 /* Sources */,
+				0C0B86E92954DEF300131C97 /* Frameworks */,
+				0C0B86EA2954DEF300131C97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C0B86EE2954DEF300131C97 /* PBXTargetDependency */,
+			);
+			name = SecureGuardTests;
+			productName = SecureGuardTests;
+			productReference = 0C0B86EC2954DEF300131C97 /* SecureGuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C0B86F52954DEF300131C97 /* SecureGuardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0B87062954DEF300131C97 /* Build configuration list for PBXNativeTarget "SecureGuardUITests" */;
+			buildPhases = (
+				0C0B86F22954DEF300131C97 /* Sources */,
+				0C0B86F32954DEF300131C97 /* Frameworks */,
+				0C0B86F42954DEF300131C97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C0B86F82954DEF300131C97 /* PBXTargetDependency */,
+			);
+			name = SecureGuardUITests;
+			productName = SecureGuardUITests;
+			productReference = 0C0B86F62954DEF300131C97 /* SecureGuardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C0B86D42954DEF200131C97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0C0B86DB2954DEF200131C97 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+					0C0B86EB2954DEF300131C97 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0C0B86DB2954DEF200131C97;
+					};
+					0C0B86F52954DEF300131C97 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0C0B86DB2954DEF200131C97;
+					};
+				};
+			};
+			buildConfigurationList = 0C0B86D72954DEF200131C97 /* Build configuration list for PBXProject "SecureGuard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C0B86D32954DEF200131C97;
+			productRefGroup = 0C0B86DD2954DEF200131C97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C0B86DB2954DEF200131C97 /* SecureGuard */,
+				0C0B86EB2954DEF300131C97 /* SecureGuardTests */,
+				0C0B86F52954DEF300131C97 /* SecureGuardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C0B86DA2954DEF200131C97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0B87222954DF2100131C97 /* Assets.xcassets in Resources */,
+				0C0B87232954DF2100131C97 /* Localizable.strings in Resources */,
+				0C0B86E72954DEF300131C97 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0B86EA2954DEF300131C97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0B86F42954DEF300131C97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C0B86D82954DEF200131C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0B87252954DF2100131C97 /* Strings+Localized.swift in Sources */,
+				0C0B87202954DF2100131C97 /* LoginViewModel.swift in Sources */,
+				0C0B87242954DF2100131C97 /* LocalAuthentication+BiometricEnum.swift in Sources */,
+				0C0B87282954DF2100131C97 /* ButtonStyles.swift in Sources */,
+				0C0B87272954DF2100131C97 /* SecureGuardApp.swift in Sources */,
+				0C0B871D2954DF2100131C97 /* IncompatibleScreen.swift in Sources */,
+				0C0B87262954DF2100131C97 /* AppRouter.swift in Sources */,
+				0C0B871E2954DF2100131C97 /* MatrixViewModel.swift in Sources */,
+				0C0B871F2954DF2100131C97 /* MatrixScreen.swift in Sources */,
+				0C0B87212954DF2100131C97 /* LoginScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0B86E82954DEF300131C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0B86F12954DEF300131C97 /* SecureGuardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0B86F22954DEF300131C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0B86FB2954DEF300131C97 /* SecureGuardUITests.swift in Sources */,
+				0C0B86FD2954DEF300131C97 /* SecureGuardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C0B86EE2954DEF300131C97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C0B86DB2954DEF200131C97 /* SecureGuard */;
+			targetProxy = 0C0B86ED2954DEF300131C97 /* PBXContainerItemProxy */;
+		};
+		0C0B86F82954DEF300131C97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C0B86DB2954DEF200131C97 /* SecureGuard */;
+			targetProxy = 0C0B86F72954DEF300131C97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C0B86FE2954DEF300131C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C0B86FF2954DEF300131C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C0B87012954DEF300131C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SecureGuard/Preview Content\"";
+				DEVELOPMENT_TEAM = 6PRU5VR942;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.blowonthepi.SecureGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C0B87022954DEF300131C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SecureGuard/Preview Content\"";
+				DEVELOPMENT_TEAM = 6PRU5VR942;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.blowonthepi.SecureGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C0B87042954DEF300131C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6PRU5VR942;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.blowonthepi.SecureGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureGuard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecureGuard";
+			};
+			name = Debug;
+		};
+		0C0B87052954DEF300131C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6PRU5VR942;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.blowonthepi.SecureGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureGuard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecureGuard";
+			};
+			name = Release;
+		};
+		0C0B87072954DEF300131C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6PRU5VR942;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.blowonthepi.SecureGuardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SecureGuard;
+			};
+			name = Debug;
+		};
+		0C0B87082954DEF300131C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6PRU5VR942;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.blowonthepi.SecureGuardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SecureGuard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C0B86D72954DEF200131C97 /* Build configuration list for PBXProject "SecureGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0B86FE2954DEF300131C97 /* Debug */,
+				0C0B86FF2954DEF300131C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C0B87002954DEF300131C97 /* Build configuration list for PBXNativeTarget "SecureGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0B87012954DEF300131C97 /* Debug */,
+				0C0B87022954DEF300131C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C0B87032954DEF300131C97 /* Build configuration list for PBXNativeTarget "SecureGuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0B87042954DEF300131C97 /* Debug */,
+				0C0B87052954DEF300131C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C0B87062954DEF300131C97 /* Build configuration list for PBXNativeTarget "SecureGuardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0B87072954DEF300131C97 /* Debug */,
+				0C0B87082954DEF300131C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C0B86D42954DEF200131C97 /* Project object */;
+}

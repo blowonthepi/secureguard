@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  SecureGuard
+
+  Created by Liam Edwards on 22/12/22.
+  
+*/
+
+// MARK: Generic
+"appName" = "SecureGuard";
+
+"loginButton" = "Login";
+"lockButton" = "Lock";
+
+// MARK: Login Screen
+"screen.login.welcomeMessage" = "Kia ora, welcome to\nSecureGuard";
+"screen.login.useFaceID" = "Use FaceID";
+"screen.login.useTouchID" = "Use TouchID";
+"screen.login.incompatible" = "SecureGuard requires iPhone Biometrics unavailable on your device";
+
+// MARK: Matrix Screen
