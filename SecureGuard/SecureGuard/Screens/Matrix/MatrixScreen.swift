@@ -17,7 +17,19 @@ struct MatrixScreen: View {
     
     var body: some View {
         VStack {
-            MatrixView(matrix: viewModel.getMatrix())
+            Spacer()
+            
+            MatrixView(isEditable: false,
+                       matrix: .constant(viewModel.matrix))
+            
+            Spacer()
+            
+            Button {
+                viewModel.isSheetPresented = true
+            } label: {
+                Text("screen.matrix.updateButton")
+            }
+            .primaryButton()
         }
         .navigationTitle("appName")
         .toolbar {
@@ -36,17 +48,28 @@ struct MatrixScreen: View {
     
     @ViewBuilder func updateSheet() -> some View {
         VStack(alignment: .center) {
-            Text("screen.matrix.updateTitle")
-                .font(.largeTitle.bold())
-                .multilineTextAlignment(.center)
+            VStack {
+                Text("screen.matrix.updateTitle")
+                    .font(.largeTitle.bold())
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                
+                MatrixView(isEditable: true,
+                           matrix: $viewModel.matrix)
+                
+                Spacer()
+            }
+            .padding()
             
-            Spacer()
-            
-            MatrixView(matrix: [[String]]())
-            
-            Spacer()
+            Button {
+                viewModel.updateMatrix()
+                viewModel.isSheetPresented = false
+            } label: {
+                Text("screen.matrix.updateButton")
+            }
+            .primaryButton()
         }
-        .padding()
     }
 }
 

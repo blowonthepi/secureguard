@@ -15,7 +15,15 @@ class BiometricManager {
     
     private let access = createBiometricAccessControl()
     
-    func addMatrix(matrix: [[String]]) {
+    func changeMatrix(matrix: [[String]]) {
+        if doesMatrixExist() == true {
+            updateMatrix(matrix: matrix)
+        } else {
+            addMatrix(matrix: matrix)
+        }
+    }
+
+    private func addMatrix(matrix: [[String]]) {
         guard doesMatrixExist() == false else { return }
         let query: [String: Any] = [kSecClass as String: kSecClassGenericPassword,
                                     kSecAttrAccessControl as String: access as Any,
@@ -27,7 +35,7 @@ class BiometricManager {
         print("Add status: \(status)")
     }
     
-    func updateMatrix(matrix: [[String]]) {
+    private func updateMatrix(matrix: [[String]]) {
         let query: [String: Any] = [kSecClass as String: kSecClassGenericPassword,
                                     kSecAttrAccount as String: "SecureGuardMatrix"]
         let attrs: [String: Any] = [kSecAttrGeneric as String: matrixToJson(from: matrix)]

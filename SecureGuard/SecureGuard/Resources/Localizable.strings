@@ -21,3 +21,4 @@
 
 // MARK: Matrix Screen
 "screen.matrix.updateTitle" = "Update your SecureGuard matrix";
+"screen.matrix.updateButton" = "Update";

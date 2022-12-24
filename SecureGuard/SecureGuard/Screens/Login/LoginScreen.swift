@@ -27,6 +27,7 @@ struct LoginScreen: View {
             
             useFaceIDButton()
         }
+        .navigationBarTitleDisplayMode(.automatic)
     }
     
     @ViewBuilder func useFaceIDButton() -> some View {
